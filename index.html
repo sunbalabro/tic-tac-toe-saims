@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> 
+<link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div>
+        <div class="form" id="gameForm">
+            <div class="fc">
+                <label for="" class="pl1">Player 1 : </label>
+                <input type="text" id="firstUser">
+                <br />
+                <br />
+                <label for="" class="pl2">Player 2 : </label>
+                <input type="text" id="secondUser">
+                <br />
+                <br />
+                <button onclick="PlayGame()">Play <i class="fa fa-play"></i> </button>
+            </div>
+           
+        </div> 
+         <div class="hide" id="gameBoard">
+            <h1>Tic Tac Toe</h1>
+            <h3 id="user1">asds</h3>
+            <h3 id="user2">asdsa</h3>
+            <div class="center">
+                <div class="flex">
+                    <div class="box" id="box1"></div>
+                    <div class="box" id="box2"></div>
+                    <div class="box" id="box3"></div>
+                    
+                </div>
+                <div class="flex">
+                    <div class="box" id="box4"></div>
+                    <div class="box" id="box5"></div>
+                    <div class="box" id="box6"></div>
+                    
+                </div>
+                <div class="flex">
+                    <div class="box" id="box7"></div>
+                    <div class="box" id="box8"></div>
+                    <div class="box" id="box9"></div>
+                </div>
+            </div>
+            <button onclick="reGame()" class="reset">Reset <i class="fa fa-refresh"></i> </button> 
+           
+            
+        </div>
+        <div class="hide" id="winningBoard">
+            <div class="congrats">
+                <h1 id="cn">Congratulations</h1>
+               <h1 id="result"></h1>
+               <button onclick="playAgain()" class="reset">Play again</button> 
+           
+            </div>
+       </div>
+    </div>
+</body>
+<script src="app.js"></script>
+</html>
